@@ -10,7 +10,7 @@ make_gif(input, output = NULL, size = NULL)
 \item{input}{Character. File path for your .mov file.}
 
 \item{output}{Character. File path for your new .gif file.
-Will default to `{input}.gif`}
+Will default to \code{{input}.gif}}
 
 \item{size}{Character. The size of the image, in the format
 "100x100". Will default to "600x400"}

@@ -1,0 +1,38 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# gifr
+
+MAKE GIFS IN R!
+
+## Installation
+
+You can install gifr from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("LucyMcGowan/gifr")
+```
+
+You must have [`ffmpeg`](https://www.ffmpeg.org) and [`gifsicle`](https://www.lcdf.org/gifsicle/) installed. This is super under contstruction, so at the moment, if you don't have those installed, it will probably just fail with no explanation. 
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example, eval = FALSE}
+make_gif("input.mov", "output.gif")
+```
+
+![](https://thesavvyreader2014.files.wordpress.com/2016/07/excited.gif)

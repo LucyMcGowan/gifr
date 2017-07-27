@@ -3,7 +3,7 @@ Title: Make gifs in R
 Version: 0.0.0.9000
 Authors@R: c(
   person("Lucy", "D'Agostino McGowan", email = "ld.mcgowan@vanderbilt.edu", role = c("aut", "cre")),
-  person("Nicholas", "Strayer", email = "nstrayer@vanderbilt.edu", role = c("aut"))
+  person("Nicholas", "Strayer", email = "n.strayer@vanderbilt.edu", role = c("aut"))
   )
 Description: Nake gifs in R.
 Depends: R (>= 3.3.3)

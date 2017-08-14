@@ -3,6 +3,8 @@
 gifr
 ====
 
+[![Build Status](https://travis-ci.org/LucyMcGowan/gifr.svg?branch=master)](https://travis-ci.org/LucyMcGowan/gifr)
+
 MAKE GIFS IN R!
 
 Installation
@@ -19,8 +21,6 @@ You must have [`ffmpeg`](https://www.ffmpeg.org) and [`gifsicle`](https://www.lc
 
 Example
 -------
-
-This is a basic example which shows you how to solve a common problem:
 
 ``` r
 make_gif("input.mov", "output.gif")

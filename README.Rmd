@@ -14,6 +14,8 @@ knitr::opts_chunk$set(
 
 # gifr
 
+[![Build Status](https://travis-ci.org/LucyMcGowan/gifr.svg?branch=master)](https://travis-ci.org/LucyMcGowan/gifr)
+
 MAKE GIFS IN R!
 
 ## Installation
@@ -28,8 +30,6 @@ devtools::install_github("LucyMcGowan/gifr")
 You must have [`ffmpeg`](https://www.ffmpeg.org) and [`gifsicle`](https://www.lcdf.org/gifsicle/) installed. This is super under contstruction, so at the moment, if you don't have those installed, it will probably just fail with no explanation. 
 
 ## Example
-
-This is a basic example which shows you how to solve a common problem:
 
 ```{r example, eval = FALSE}
 make_gif("input.mov", "output.gif")

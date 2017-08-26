@@ -1,6 +1,6 @@
-#' Convert a .mov file to a .gif
+#' Convert a .mov or .mp4 file to a .gif
 #'
-#' @param input Character. File path for your .mov file.
+#' @param input Character. File path for your .mov / .mp4 file.
 #' @param output Character. File path for your new .gif file.
 #'   Will default to `{input}.gif`
 #' @param size Character. The size of the image, in the format
@@ -13,6 +13,8 @@
 #' make_gif(input = "my_mov.mov", output = "my_gif.gif")
 #' }
 make_gif <- function(input, output = NULL, size = NULL) {
+  check_ffmpeg()
+  check_gifsicle()
 
   if (!file.exists(input)) {
     stop(glue::glue(
@@ -42,6 +44,5 @@ make_gif <- function(input, output = NULL, size = NULL) {
                         "-f gif ",
                         "- | gifsicle --optimize=3 --delay=3 ",
                         "> {output}")
-  system(command,
-         show.output.on.console = FALSE)
+  invisible(capture.output(system(command)))
 }
